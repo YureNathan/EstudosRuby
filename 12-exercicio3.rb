@@ -1,15 +1,17 @@
-puts "Entre com um número"
-number = gets.chomp.to_i
+puts "Digite a quantidade de números: "
+n = gets.chomp.to_i
 
-fib = 1 
-fibPrev = 0 
+t1 = 0 
+t2 = 1 
 
-while fib <= number
-  puts fib
-  # temp = fib
-  # fib += fibPrev
-  # fibPrev = temp
+puts "#{t1}\n#{t2}"
 
-  # operador de atribuição paralela 
-  fibPrev, fib = fib, fib+fibPrev
-end
+cont = 3
+
+while cont <= n 
+  t3 = t1 + t2
+  puts"#{t3}"
+  t1 = t2 
+  t2 = t3
+  cont += 1 
+end 
